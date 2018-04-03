@@ -1,0 +1,59 @@
+#container {
+  margin: auto;
+  text-align: center;
+}
+
+.gridContainer {
+  display: inline-block;
+}
+
+.minesweeper table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+td {
+  border: 1px solid gray;
+  width: 1.5em;
+  min-width: 1.5em;
+  height: 1.5em;
+  font-family: "Arial Black", Gadget, sans-serif;
+}
+
+td:hover {
+  cursor: default;
+}
+
+td.mayClick:hover {
+  cursor: pointer;
+  background-color: red;
+}
+
+td.fire {
+  background-color: #ffaa22;
+}
+
+#face {
+  background-color: #eee;
+}
+
+#reset {
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.noSelect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome and Opera */
+}

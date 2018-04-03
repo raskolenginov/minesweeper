@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="minesweeper.css">
+
+</head>
+
+<body>
+  <div id="container" class="minesweeper">
+    <h1>Minesweeper</h1>
+    <div class="gridContainer noSelect">
+      <table class="gridContainer">
+        <td id="face">:|</td>
+      </table>
+      <table id="grid" cellspacing="0">
+      </table>
+    </div>
+    <!-- gridContainer -->
+    <br>
+    <div>
+      <p>Click to reveal tiles. Right-click to flag.
+        <br/> Win by flagging all the mines and nothing else, OR by revealing every tile without a mine.
+      </p>
+      <p>Flags placed:
+        <span id="flagCounter">0</span>
+      </p>
+      <p>Number of mines:
+        <span id="mineCounter">0</span>
+      </p>
+      <button id="reset" onClick="reset()">Reset</button>
+    </div>
+  </div>
+  <!-- container -->
+  <script src="minesweeper.js"></script>
+</body>
+
+</html>
